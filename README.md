@@ -1,73 +1,60 @@
-<img src="Dermafyr.png"/>
+ABOUT - MindTrack serves as a dedicated personal companion on your journey toward improved mental health and well-being. By combining cutting-edge technology with evidence-based practices, it aims to deliver a comprehensive mental wellness solution.
+The platform leverages innovative tools and resources to provide personalized support, helping users navigate the complexities of mental health challenges. Whether through guided exercises, interactive features, or insightful content, MindTrack offers a holistic approach tailored to individual needs. Its goal is to empower users with the knowledge and skills to foster resilience, enhance emotional well-being, and promote a healthier mindset.
+Ultimately, MindTrack seeks to create a supportive environment that encourages self-discovery and growth, making the path to mental wellness more accessible and effective.
 
-## Inspiration
-The growing accessibility gap in dermatological care inspired us to create Dermafyr. Many people struggle to get professional skin advice, either due to cost, location or wait times. We wanted to democratize access to quality skincare guidance by bringing AI-powered dermatological analysis directly to local stores and homes.
-## What it does
-**Dermafyr** is a dual-platform skincare analysis system that:
+<img width="1378" alt="Screenshot 2024-10-13 at 9 12 43 PM" src="https://github.com/user-attachments/assets/5d3c314d-57c6-4b2a-8458-4335643e7865">
 
-- Captures and analyzes facial skin conditions using AI with high accuracy
-- Provides instant, personalized skincare routines
-- Generates customized dietary recommendations
-- Recommends specific products available at the user's location
-- Operates both as in-store kiosks (at retailers like CVS and Walmart) and as a web platform
-- Processes everything offline in stores for complete privacy, efficiency, and security
 
-## How we built it
-- Frontend: React for web interface, Electron for desktop application
-- Hardware: Raspberry Pi 5 for in-store kiosks
-- Transfer-Learning ML: Trained on custom datasets for skin condition recognition/classification with TensorFlow
-- Backend: FastAPI and Gemini API to format suggestion system
-- Local Processing: Integrated Llama model for offline analysis and suggestion system.
-- Dual Architecture:
-  - Offline system for in-store kiosks ensuring data privacy
-  - Web-based system for at-home users
-- Camera Integration: Real-time facial scanning and analysis
+FEATURES - MindTrack offers a comprehensive suite of features designed to support users on their mental health journey. With daily check-ins to track mood and mental states, users receive personalized insights from AI analysis. The platform includes a vast library of guided meditations catering to various needs, along with 24/7 support from an AI chatbot that provides empathetic responses and coping strategies. Progress tracking allows users to visualize their mental health journey, set personalized goals, and celebrate achievements. Additionally, MindTrack provides educational resources curated by expert psychologists, customizable reminders for mindfulness practices, and moderated community forums for peer support. Committed to continuous improvement, the team at MindTrack actively integrates user feedback and the latest psychological research to enhance its offerings, ensuring a cutting-edge digital mental health solution.
 
-## Challenges we ran into
-- Optimizing the AI model to run efficiently on Raspberry Pi hardware
-- Ensuring consistent image quality across different lighting conditions
-- Building a reliable offline system while maintaining the same accuracy as the online version
-- Balancing between detailed analysis and instant results
-- Creating a user interface that feels professional yet approachable
+<img width="1276" alt="Screenshot 2024-10-13 at 9 07 49 PM" src="https://github.com/user-attachments/assets/16a9d94b-66b2-4e47-bd73-71e60c6aa4c3">
 
-## Accomplishments that we're proud of
-- Achieving 97% accuracy in skin condition detection
-- Successfully implementing offline processing for complete data privacy
-- Creating a dual-platform solution that works seamlessly both in-store and online
-- Developing a system that provides immediate, actionable recommendations
-- Building a scalable solution that can be easily deployed to retail locations
+CHATBOT - MindTrack features an AI-powered chatbot that offers 24/7 support to users seeking immediate assistance. Designed to enhance mental well-being, the chatbot is trained to provide empathetic responses tailored to individual needs. Whether you're facing anxiety, stress, or simply need someone to talk to, the chatbot is equipped with a range of coping strategies and resources. Its accessible nature ensures that help is available whenever you need it, making it an invaluable tool for those navigating their mental health journey. This round-the-clock support fosters a sense of connection and reassurance, empowering users to take proactive steps toward better mental health.
 
-## What we learned
-- Deep learning model optimization for edge devices
-- Importance of user privacy in healthcare applications
-- Challenges of creating consistent cross-platform experiences
-- Balance between technical capability and user accessibility
-- Real-world applications of AI in healthcare
 
-## What's next for Dermafyr
-Expand to more retail locations
-Add support for multiple languages
-Integrate with more product databases
-Develop a mobile app version
-Implement "Skin Care Journey Tracking" - an AI-powered progress analysis system that:
+<img width="587" alt="Screenshot 2024-10-13 at 9 14 30 PM" src="https://github.com/user-attachments/assets/0d15871f-9a26-4064-8dae-f3985e2872ab">
+<img width="487" alt="Screenshot 2024-10-13 at 9 16 15 PM" src="https://github.com/user-attachments/assets/370c1e49-e7ee-4d62-917a-ca4d2b1b2124">
 
-Compares historical photos to track improvement metrics
-Generates progress reports and trend analysis
-Identifies which products and routines are most effective for your specific skin
-Provides data-driven adjustments to your skincare routine based on progress
 
-Add "Smart Product Scanner" feature:
 
-Instantly analyze product ingredients by scanning the label
-AI-powered compatibility checks the user's skin condition
-Predictive analysis of potential benefits or risks
-Alternative product suggestions if incompatibility is detected
-Real-time alerts for ingredients that might not suit your skin type
 
-Implement AR features for virtual product try-ons
-Partner with dermatologists for validated recommendation systems
-Create a community feature for users to share their skincare journeys
 
-## Demo Video:
-[![Demo Video](https://img.youtube.com/vi/3ZTVrNvTw7I/maxresdefault.jpg)](https://www.youtube.com/watch?v=3ZTVrNvTw7I)
 
+ 
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
